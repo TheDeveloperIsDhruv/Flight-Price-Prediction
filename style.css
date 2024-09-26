@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+form{
+    border: solid 2px;
+    padding: 42px;
+    width: 18cm;
+    height: 16cm;
+    text-align: center;
+    margin-left: 295px;
+}
+
+#first,#second{
+    border: solid 2px;
+    padding: 22px;
+    margin: 5px;
+    width: 4cm;
+    margin: 34px;
+
+}
+#first{
+    margin-right: 105px;
+}
+#cont1{
+    height: 4cm;
+    display: flex;
+    padding:12px;
+    margin-bottom: 32px;;
+}
+#third,#fourth{
+    border: solid 2px;
+    padding: 18px;
+    margin: 5px;
+    width: 4cm;
+    margin: 34px;
+
+}
+#third{
+    margin-right: 105px;
+}
+#cont2{
+    height: 4cm;
+    display: flex;
+    padding:12px;
+    margin-bottom: 32px;
+}
+#fifth,#sixth{
+    border: solid 2px;
+    padding: 18px;
+    margin: 5px;
+    width: 4cm;
+    margin: 34px;
+
+}
+#fifth{
+    margin-right: 105px;
+}
+#cont3{
+    height: 4cm;
+    display: flex;
+    padding:8px
+}
+#submit{
+    height: 1cm;
+    width: 2cm;
+    font-size: larger;
+    font-weight:bolder;
+}
+#header{
+    display: none;
+}
