@@ -1,12 +1,18 @@
 from flask import Flask,render_template, request, redirect, url_for
-
+import joblib
+import sklearn
+print(sklearn.__version__)
 app=Flask(__name__)
+
+
+model = joblib.load('model.joblib')
+print("Model is loaded!")
 
 @app.route("/")
 def welcome():
     return "Hello World"
 
-msg=[]
+lst=[]
 @app.route('/main',methods=['POST','GET'])
 def homepage():
     if (request.method == "GET"):
