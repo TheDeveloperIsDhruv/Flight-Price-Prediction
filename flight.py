@@ -5,12 +5,17 @@ app=Flask(__name__)
 @app.route("/")
 def welcome():
     return "Hello World"
+
+msg=[]
 @app.route('/main',methods=['POST','GET'])
 def homepage():
     if(request.method=="GET"):
         return render_template("main.html")
     else:
         dest=request.form.get("dest")
+        source=request.form.get("source")
+        stops=request.form.get("stop")
+        airline=request.form.get("airline")
         msg="Submitted!"
         return render_template('main.html', message=msg)
 if __name__=="__main__":
