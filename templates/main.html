@@ -13,38 +13,38 @@
         <div id="cont1">
         <div id="first">
             <label for="Ddate">Departure Date</label>
-            <input type="date" id="Ddate">
+            <input type="date" id="Ddate" name="Ddate">
         </div>
         <div id="second">
             <label for="Adate">Arrival Date</label>
-            <input type="date" id="Adate">
+            <input type="date" id="Adate" name="Adate">
         </div>
         </div>
         <div id="cont2">
         <div id="third">
             <label for="source">From</label>
-            <input type="text" id="source">
+            <input type="text" id="source" name="source">
         </div>
         <div id="fourth">
             <label for="dest">To</label>
-            <input type="text" id="dest">
+            <input type="text" id="dest" name="dest">
         </div>
     </div>
     <div id="cont3">
         <div id="fifth">
             <label for="stop">Stops</label>
-            <input type="number" id="stop">
+            <input type="number" id="stop" name="stop">
         </div>
         <div id="sixth">
             <label for="airline">Airlines</label>
-            <input type="text" id="airline">
+            <input type="text" id="airline" name="airline">
         </div>
     </div>
     <br>
     <button type="submit" id="submit">Submit</button>
     </form>
 </div>
-<h1 id="header">{{message}}</h1>
+<h1 id="header">{{msg}}</h1>
 
     <script>
         window.onload = function() {
