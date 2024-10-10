@@ -1,77 +1,78 @@
-.container{
-    display: flex;
-    justify-content: center; /* Horizontally centers the form */
-    align-items: center; /* Vertically centers the form */
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-h1{
+
+h1 {
     text-align: center;
+    margin-top: 20px;
+    color: #0056b3;
+    font-size: 42px;
 }
 
-form{
-    border: solid 2px;
-    padding: 42px;
-    width: 18cm;
-    height: 16cm;
-    text-align: center;
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-#first,#second{
-    border: solid 2px;
-    padding: 22px;
-    margin: 5px;
-    width: 4cm;
-    margin: 34px;
-
-}
-#first{
-    margin-right: 105px;
-}
-#cont1{
-    height: 4cm;
+form {
     display: flex;
-    padding:12px;
-    margin-bottom: 32px;;
+    flex-direction: column;
 }
-#third,#fourth{
-    border: solid 2px;
-    padding: 18px;
-    margin: 5px;
-    width: 4cm;
-    margin: 34px;
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input[type="datetime-local"],
+input[type="number"],
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+input[type="datetime-local"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-left: 580px;
+    width: 20%;
+    height: 30%;
 
 }
-#third{
-    margin-right: 105px;
-}
-#cont2{
-    height: 4cm;
-    display: flex;
-    padding:12px;
-    margin-bottom: 32px;
-}
-#fifth,#sixth{
-    border: solid 2px;
-    padding: 18px;
-    margin: 5px;
-    width: 4cm;
-    margin: 34px;
 
+button:hover {
+    background-color: #004494;
 }
-#fifth{
-    margin-right: 105px;
-}
-#cont3{
-    height: 4cm;
-    display: flex;
-    padding:8px
-}
-#submit{
-    height: 1cm;
-    width: 2cm;
-    font-size: larger;
-    font-weight:bolder;
-}
-#header{
+
+#header {
     display: none;
+    text-align: center;
+    color: #28a745; /* Success message color */
+    margin-top: 20px;
 }

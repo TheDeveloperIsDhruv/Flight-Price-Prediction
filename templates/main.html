@@ -9,42 +9,68 @@
 <body>
     <h1>Welcome to Flight Price Prediction Model</h1>
     <div class="container">
-    <form action="/main" method="POST">
-        <div id="cont1">
-        <div id="first">
-            <label for="Ddate">Departure Date</label>
-            <input type="date" id="Ddate" name="Ddate">
-        </div>
-        <div id="second">
-            <label for="Adate">Arrival Date</label>
-            <input type="date" id="Adate" name="Adate">
-        </div>
-        </div>
-        <div id="cont2">
-        <div id="third">
-            <label for="source">From</label>
-            <input type="text" id="source" name="source">
-        </div>
-        <div id="fourth">
-            <label for="dest">To</label>
-            <input type="text" id="dest" name="dest">
-        </div>
+        <h1>Welcome to Flight Price Prediction Model</h1>
+        <form action="/main" method="POST">
+            <div id="cont1">
+                <div id="first">
+                    <label for="Ddate">Departure Date</label>
+                    <input type="datetime-local" id="Ddate" name="Ddate">
+                </div>
+                <div id="second">
+                    <label for="Atime">Arrival Date</label>
+                    <input type="datetime-local" id="Atime" name="Atime">
+                </div>
+            </div>
+            <div id="cont2">
+                <div id="third">
+                    <label for="source">From</label>
+                    <select id="source" name="source">
+                        <option value="">Select a Source</option>
+                        <option value="Source_Chennai" id="source_Chennai">Chennai</option>
+                        <option value="Source_Delhi" id="source_Delhi">Delhi</option>
+                        <option value="Source_Kolkata" id="source_Kolkata">Kolkata</option>
+                        <option value="Source_Mumbai" id="source_Mumbai">Mumbai</option>
+                    </select>
+                </div>
+                <div id="fourth">
+                    <label for="dest">To</label>
+                    <select id="dest" name="dest">
+                        <option value="">Select a Destination</option>
+                        <option value="Destination_Cochin" id="destination_Cochin">Cochin</option>
+                        <option value="Destination_Delhi" id="destination_Delhi">Delhi</option>
+                        <option value="Destination_Hyderabad" id="destination_Hyderabad">Hyderabad</option>
+                        <option value="Destination_Kolkata" id="destination_Kolkata">Kolkata</option>
+                        <option value="Destination_New Delhi" id="destination_New Delhi">New Delhi</option>
+                    </select>
+                </div>
+            </div>
+            <div id="cont3">
+                <div id="fifth">
+                    <label for="stop">Stops</label>
+                    <input type="number" id="stop" name="stop">
+                </div>
+                <div id="sixth">
+                    <label for="airline">Airlines</label>
+                    <select id="airline" name="airline">
+                        <option value="">Select an Airline</option>
+                        <option value="Airline_Air India">Air India</option>
+                        <option value="Airline_GoAir">GoAir</option>
+                        <option value="Airline_IndiGo">IndiGo</option>
+                        <option value="Airline_Jet Airways">Jet Airways</option>
+                        <option value="Airline_Jet Airways Business">Jet Airways Business</option>
+                        <option value="Airline_Multiple carriers">Multiple carriers</option>
+                        <option value="Airline_Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+                        <option value="Airline_SpiceJet">SpiceJet</option>
+                        <option value="Airline_Trujet">Trujet</option>
+                        <option value="Airline_Vistara">Vistara</option>
+                        <option value="Airline_Vistara Premium economy">Vistara Premium economy</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <h1 id="header">{{msg}}</h1>
     </div>
-    <div id="cont3">
-        <div id="fifth">
-            <label for="stop">Stops</label>
-            <input type="number" id="stop" name="stop">
-        </div>
-        <div id="sixth">
-            <label for="airline">Airlines</label>
-            <input type="text" id="airline" name="airline">
-        </div>
-    </div>
-    <br>
-    <button type="submit" id="submit">Submit</button>
-    </form>
-</div>
-<h1 id="header">{{msg}}</h1>
 
     <script>
         window.onload = function() {
