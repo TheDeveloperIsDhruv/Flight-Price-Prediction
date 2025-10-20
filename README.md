@@ -14,4 +14,3 @@ Predict flight ticket prices with ease using machine learning and a sleek web in
 
 ## 👨‍💻 Author
 Developed by Dhruv K Patel
-```
